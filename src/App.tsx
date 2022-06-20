@@ -3,13 +3,11 @@ import { Component, createSignal } from 'solid-js';
 import logo from './logo.svg';
 import styles from './App.module.css';
 
-import { Button } from './assets/components/App';
+import { Button } from './assets/components/Button';
+import { ShowItem } from './assets/components/Show';
+import { ForEach } from './assets/components/ForEach';
 
 const App: Component = () => {
-  const [first, setFirst] = createSignal("JSON")
-
-
-
   return (
     <div >
       <a
@@ -18,8 +16,9 @@ const App: Component = () => {
         rel="noopener noreferrer"
       >
       </a>
-      {first}
       <Button />
+      <ShowItem />
+      <ForEach />
     </div>
   );
 };
