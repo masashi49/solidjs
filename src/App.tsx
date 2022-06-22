@@ -7,7 +7,11 @@ import { Button } from './assets/components/Button';
 import { ShowItem } from './assets/components/Show';
 import { ForEach } from './assets/components/ForEach';
 
+const NODE_ENVAA = process.env.NODE_ENV;
+
 const App: Component = () => {
+
+
   return (
     <div >
       <a
